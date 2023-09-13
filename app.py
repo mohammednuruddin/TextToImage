@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import io
 from PIL import Image
-# import base64
+import base64
 # from dotenv import load_dotenv
 # import os
 
