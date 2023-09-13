@@ -11,12 +11,12 @@ from PIL import Image
 # bearer_token = os.environ.get('BEARER_TOKEN')
 # print("bearer", bearer_token)
 
-token = st.secrets["BEARER_TOKEN"]
+# token = st.secrets["BEARER_TOKEN"]
 
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-headers = {"Authorization": f"Bearer {token}"}
+headers = {"Authorization": f"Bearer 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"}
 
-st.title("Sterling's Text to Image")
+st.title("Text to Image")
 
 # Create a two-column layout
 col1, col2 = st.columns(2)
