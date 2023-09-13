@@ -11,9 +11,10 @@ from PIL import Image
 # bearer_token = os.environ.get('BEARER_TOKEN')
 # print("bearer", bearer_token)
 
+token = st.secrets["BEARER_TOKEN"]
 
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-headers = {"Authorization": f"Bearer {st.secrets["BEARER_TOKEN"]}"}
+headers = {"Authorization": f"Bearer {token}"}
 
 st.title("Sterling's Text to Image")
 
