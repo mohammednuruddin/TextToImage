@@ -2,12 +2,20 @@ import streamlit as st
 import requests
 import io
 from PIL import Image
-import base64
+# import base64
+# from dotenv import load_dotenv
+# import os
+
+# Load environment variables from the .env file
+# load_dotenv()
+# bearer_token = os.environ.get('BEARER_TOKEN')
+# print("bearer", bearer_token)
+
 
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": f"Bearer {st.secrets["BEARER_TOKEN"]}"}
 
-st.title("Text to Image")
+st.title("Sterling's Text to Image")
 
 # Create a two-column layout
 col1, col2 = st.columns(2)
